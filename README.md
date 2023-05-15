@@ -14,3 +14,7 @@ Clone the repo:
 
     git clone https://github.com/Sommos/javascript_3d_parallax_scrolling_website
     cd javascript_3d_parallax_scrolling_website
+
+<p align="center">
+    <img src="img/website_image_0.png" width="150" />
+</p>
