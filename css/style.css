@@ -1,0 +1,111 @@
+/* imports font family from googles api */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap")
+
+/* sets basic variables for all elements */
+*, 
+*::before, 
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* sets font family to previously imported and sets to san-serif */
+    font-family: "Poppins", sans-serif;
+    /* sets background color for entire site */
+    background-color: #333;
+}
+
+.logo {
+    width: 100px;
+}
+
+header {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header nav {
+    max-width: 1400px;
+    /* forces nav element in header to be centered */
+    margin: 0 auto;
+    padding: 0 2rem;
+    /* forces logo and links to be spaced between each other */
+    display: flex;
+    justify-content: space-between;
+    /* forces the elements to be centered on the y-axis */
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    /* removes button icons from the list */
+    list-style: none;
+    align-items: center;
+}
+
+header ul a {
+    /* removes underline from links */
+    text-decoration: none;
+    /* set text color to white */
+    color: #fff;
+    /* add padding */
+    padding: 0 1.5rem;
+    /* force text to uppercase */
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.83rem;
+}
+
+.search a {
+    font-size: 1.05rem;
+    padding: 0 3rem;
+}
+
+.menu {
+    padding-left: 1.5rem;
+}
+
+.menu a {
+    width: 37px;
+    height: 37px;
+    padding: 0;
+    display: flex;
+    border-radius: 50%;
+    background-color: rgba(115, 115, 115, 0.7);
+    /* blurs menu icon */
+    backdrop-filter: blur(10px);
+    -webkit-backgrop-filter: blur(10px);
+    /* adjusts position of menu icon */
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .fa-solid .fa-bars {
+    position: relative;
+    width: 52%;
+    height: 1.3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.menu .fa-solid .fa-bars::before, 
+.menu .fa-solid .fa-bars::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 2px;
+}
+
+.menu .fa-solid .fa-bars::before {
+    top: -4.5px;
+}
+
+.menu .fa-solid .fa-bars::after {
+    bottom: -4.5px;
+}
