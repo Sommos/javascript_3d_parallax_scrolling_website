@@ -19,10 +19,6 @@ body {
     background-color: #0b372dbb;
 }
 
-.logo {
-    width: 100px;
-}
-
 header {
     /* this stops the navbar causing overflow and a scroll bar on the right for the user */
     position: absolute;
@@ -82,8 +78,6 @@ header ul a {
     width: 37px;
     height: 37px;
     display: flex;
-    border-radius: 50%;
-    background-color: rgba(115, 115, 115, 0.7);
     /* blurs menu icon */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);

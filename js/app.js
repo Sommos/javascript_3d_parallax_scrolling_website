@@ -108,7 +108,7 @@ timeline.from(".text h1",
     {
       y: -20,
       opacity: 0,
-      duration: 2.0,
+      duration: 1.5,
     },
   )
   .from(
