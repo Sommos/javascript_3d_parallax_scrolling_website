@@ -1,7 +1,7 @@
 # Javascript 3D Parallax Scrolling Website
 
 <p align="center">
-    <img src="img/website_image_0.png" width="300" />
+    <img src="img/website_image_0.png" width="1030" />
 </p>
 
 This program builds a responsive website in HTML, CSS & JavaScript that produces a simple 3d parallax scrolling effect
