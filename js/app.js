@@ -29,10 +29,19 @@ function update(cursorPosition) {
       translateX(calc(-50% + ${-xValue * speedx}px)) 
       translateY(calc(-50% + ${yValue * speedy}px))`;
   });
-}
+} 
 
 // update the parallax effect on mousemove
 update(0);
+
+// disable the double click highlight
+document.addEventListener.EventListener("mousedown", function(event) {
+  // check if mousedown has been pressed twice
+  if (event.detail === 2) {
+    // prevent the default action
+    event.preventDefault();
+  }
+}, false);
 
 // add event listener to the window to update the mouse position
 window.addEventListener("mousemove", (e) => {
